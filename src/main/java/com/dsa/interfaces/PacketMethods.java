@@ -2,7 +2,9 @@ package com.dsa.interfaces;
 
 public interface PacketMethods {
 
-    void nextNode();
+    void move(); //move packets to server
 
-    //...the rest
+    void convert(String data); //converts message to packet
+
+
 }

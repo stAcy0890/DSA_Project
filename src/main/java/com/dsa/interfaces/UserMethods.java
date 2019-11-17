@@ -8,5 +8,5 @@ public interface UserMethods {
 
     String readMessage();
 
-    //...the rest
+    boolean isConnected();  // checks if a user is connected to at most 1 server
 }

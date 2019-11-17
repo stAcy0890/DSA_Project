@@ -6,5 +6,9 @@ public interface ServerMethods {
 
     void receivePacket();
 
-    //....the rest
+    boolean isActive(); //whether or not the server is on
+
+    int numOfConnectedServers(); // num of currently connected servers
+
+    int numOfConnectedUsers();// num of currently connected users
 }
