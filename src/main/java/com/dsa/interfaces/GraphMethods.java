@@ -1,18 +1,22 @@
 package com.dsa.interfaces;
 
-public interface GraphMethods {
+public interface GraphMethods<T> {
 
-    void addServer();
+    void addSystem(T s);
 
-    void removeServer();
+    void removeSystem();
 
-    void addUser();
-
-    void removeUser();
-
-    void addConnection(); // between server and user
+    void addConnection();
 
     void fastestPath();
+
+    int getNumSystems();
+
+    int getNumServers();
+
+    int getNumUsers();
+
+    String toString();
 
     //...the rest
 
