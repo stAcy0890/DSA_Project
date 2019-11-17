@@ -2,7 +2,7 @@ package com.dsa.interfaces;
 
 public interface UserMethods {
 
-    void composeMessage();
+    void composeMessage(String message);
 
     void sendMessage();
 

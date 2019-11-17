@@ -11,4 +11,6 @@ public interface ServerMethods {
     int numOfConnectedServers(); // num of currently connected servers
 
     int numOfConnectedUsers();// num of currently connected users
+
+
 }

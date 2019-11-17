@@ -6,6 +6,12 @@ public interface GraphMethods {
 
     void removeServer();
 
+    void addUser();
+
+    void removeUser();
+
+    void addConnection(); // between server and user
+
     void fastestPath();
 
     //...the rest
