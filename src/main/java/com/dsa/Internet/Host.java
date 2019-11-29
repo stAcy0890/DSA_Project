@@ -3,12 +3,15 @@ package com.dsa.Internet;
 import java.util.Stack;
 
 public class Host {
+    public void updateInbox(Packet p) {
+        unreadInbox.push(p);
+    }
+
     private String name;
     private Type type;
     private Packet receiver;
     private Stack<Packet> unreadInbox;
     private Stack<Packet> readInbox;
-    private boolean isConnected;
     private boolean isActive;
 
     public Host(String n, Type t) {
@@ -19,8 +22,8 @@ public class Host {
         readInbox = new Stack<Packet>();
     }
 
-    public void updateInbox(Packet p) {
-        unreadInbox.push(p);
+    public int numOfConnectedUsers() {  //TODO: Haven't done this yet
+        return 0;
     }
 
     public void openInbox() {
@@ -61,15 +64,11 @@ public class Host {
         return isActive;
     }
 
-    public int numOfConnectedUsers() {
-        return 0;
-    }
+    enum Type {SERVER, USER}
 
     @Override
     public String toString() {
         return getName();
     }
-
-    enum Type {SERVER, USER}
 
 }

@@ -33,11 +33,13 @@ public class Model {
 
         System.out.println();
         System.out.println(network);
+        network.removeHost(server2);
 
         System.out.println("Number of connected hosts: " + network.getNumHosts());
         System.out.println("Number of connected servers: " + network.getNumServers());
         System.out.println("Number of connected users: " + network.getNumUsers());
 
+        System.out.println();
         Scanner opt = new Scanner(System.in);
 
         System.out.println("Select an option.\n\tS for Send Message\n\tO for Open User Inbox" +
@@ -54,6 +56,12 @@ public class Model {
                 switch (ans) {
                     case "Y":
                     case "y":
+                        for (String name : network.members.keySet()) {
+                            if (network.members.get(name).getType() == Host.Type.USER)
+                                System.out.println("\t" + name);
+                        }
+                        String name = opt.nextLine();
+                        Host user = network.members.get(name);
                         network.sendPacket();
                         break;
                     case "N":
@@ -62,7 +70,7 @@ public class Model {
                 }
                 break;
             case "O":
-            case "o":
+            case "o":             // TODO: Loop back after choosing to not send a message so that it can be read by the other user.
                 System.out.println("Enter User: ");
                 for (String name : network.members.keySet()) {
                     if (network.members.get(name).getType() == Host.Type.USER)
@@ -95,8 +103,14 @@ public class Model {
     }
 
     public void removeHost(Host h) {
-        if (h.isActive())
+        if (h.isActive()) {
             h.setActivate(false);
+            if (h.getType() == Host.Type.SERVER)
+                numServers--;
+            else
+                numUsers--;
+            numHosts--;
+        }
     }
 
     public void addConnection(Host A, Host B, int weight) {
@@ -149,7 +163,7 @@ public class Model {
         // .getHost(): returns the host at the node (i.e. the server)
         path.add(destination);
 
-        //TO-DO: implement real pathfinder in phase 4
+        //TODO: implement real pathfinder in phase 4
         //LinkedList<Host> path = fastestPath(Host source, Host destination);
         //Packet p = new Packet(message);
 

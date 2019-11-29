@@ -16,6 +16,7 @@ public class Packet {
         return message;
     }
 
+    //TODO: Yet to be implemented.
     public void setMessage(String message) {
         this.message = message;
     }
@@ -44,7 +45,5 @@ public class Packet {
         this.path = path;
     }
 
-    public void convert(String data) {
 
-    }
 }
