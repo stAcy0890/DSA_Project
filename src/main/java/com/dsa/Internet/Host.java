@@ -13,11 +13,15 @@ public class Host {
     private Stack<Packet> unreadInbox;
     private Stack<Packet> readInbox;
     private boolean isActive;
+    private int d;
+    private Host parent;
 
     public Host(String n, Type t) {
         name = n;
         type = t;
         isActive = true;
+        d = 10000; // infinity;
+        parent = null;
         unreadInbox = new Stack<Packet>();
         readInbox = new Stack<Packet>();
     }
@@ -64,11 +68,28 @@ public class Host {
         return isActive;
     }
 
+    public Host getParent() {
+        return parent;
+    }
+
+    public void setParent(Host p) {
+        parent = p;
+    }
+
+    public int getD() {
+        return d;
+    }
+
+    public int setD(int distance) {
+        return d = distance;
+    }
+
     enum Type {SERVER, USER}
 
     @Override
     public String toString() {
         return getName();
     }
+
 
 }

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8baa41dd-249e-43d1-bf3c-be8e773479b3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/META-INF/DSA_Project.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Host$Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Host$Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Host.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Host.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Model$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Model$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Model.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Packet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Packet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dsa/Internet/Host.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dsa/Internet/Host.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dsa/Internet/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dsa/Internet/Model.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="chinweibegbu" />
+        <option value="chinwe.ibegbu@gmail.com" />
+        <option value="Chinwe Ibegbu" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/dsa/Internet/Model.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1TXbWns90DayRiq6FwJBADhXTeu" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.dsa.network" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Model">
+    <configuration name="Model" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dsa.Internet.Model" />
+      <module name="DSA_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dsa.Internet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestJunitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DSA_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dsa.interfaces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dsa.network" />
+      <option name="MAIN_CLASS_NAME" value="com.dsa.network.TestJunitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestJunitTest.getValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DSA_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dsa.interfaces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dsa.network" />
+      <option name="MAIN_CLASS_NAME" value="com.dsa.network.TestJunitTest" />
+      <option name="METHOD_NAME" value="getValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestJunitTest.testNotEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DSA_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dsa.interfaces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dsa.network" />
+      <option name="MAIN_CLASS_NAME" value="com.dsa.network.TestJunitTest" />
+      <option name="METHOD_NAME" value="testNotEquals" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Model" />
+        <item itemvalue="JUnit.TestJunitTest.testNotEquals" />
+        <item itemvalue="JUnit.TestJunitTest" />
+        <item itemvalue="JUnit.TestJunitTest.getValue" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8baa41dd-249e-43d1-bf3c-be8e773479b3" name="Default Changelist" comment="" />
+      <created>1573609422145</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573609422145</updated>
+    </task>
+    <task id="LOCAL-00001" summary="First commit&#10;&#10;Update: created project structure.&#10;Update: created project interfaces.&#10;&#10;ToDo: the project. &#10;&#10;Issues: N/A&#10;&#10;status: stable">
+      <created>1573611166610</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573611166610</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Second commit&#10;&#10;Update: added methods to Server, User and Packet methods.&#10;&#10;ToDo: the main classes for each. &#10;&#10;Issues: N/A&#10;&#10;status: stable">
+      <created>1573951255330</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573951255330</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Second commit&#10;&#10;Update: added methods to Graph method.&#10;&#10;ToDo: the main classes for each. &#10;&#10;Issues: N/A&#10;&#10;status: stable">
+      <created>1573954319471</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573954319471</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Second commit&#10;&#10;Update: the main classes for each.&#10;&#10;ToDo: implementing the methods. &#10;&#10;Issues: N/A&#10;&#10;status: stable">
+      <created>1573954997256</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573954997256</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fourth commit&#10;&#10;Update: Phase 1 Completed!.&#10;&#10;ToDo: implementing A* Pathfinder Algorithm. &#10;&#10;Issues: N/A&#10;&#10;status: stable">
+      <created>1574034719349</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1574034719349</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fourth commit&#10;&#10;Update: Phase 1 Completed!.&#10;&#10;ToDo: implementing A* Pathfinder Algorithm. &#10;&#10;Issues: N/A&#10;&#10;status: stable">
+      <created>1575042468567</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575042468567</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="First commit&#10;&#10;Update: created project structure.&#10;Update: created project interfaces.&#10;&#10;ToDo: the project. &#10;&#10;Issues: N/A&#10;&#10;status: stable" />
+    <MESSAGE value="Second commit&#10;&#10;Update: added methods to Server, User and Packet methods.&#10;&#10;ToDo: the main classes for each. &#10;&#10;Issues: N/A&#10;&#10;status: stable" />
+    <MESSAGE value="Second commit&#10;&#10;Update: added methods to Graph method.&#10;&#10;ToDo: the main classes for each. &#10;&#10;Issues: N/A&#10;&#10;status: stable" />
+    <MESSAGE value="Second commit&#10;&#10;Update: the main classes for each.&#10;&#10;ToDo: implementing the methods. &#10;&#10;Issues: N/A&#10;&#10;status: stable" />
+    <MESSAGE value="Fourth commit&#10;&#10;Update: Phase 1 Completed!.&#10;&#10;ToDo: implementing A* Pathfinder Algorithm. &#10;&#10;Issues: N/A&#10;&#10;status: stable" />
+    <MESSAGE value="Fifth commit&#10;&#10;Update: Dijkstra's Algorithm implemented.&#10;        Completed!&#10;&#10;ToDo: Error Handling &#10;&#10;Issues: N/A&#10;&#10;status: Very Stable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fifth commit&#10;&#10;Update: Dijkstra's Algorithm implemented.&#10;        Completed!&#10;&#10;ToDo: Error Handling &#10;&#10;Issues: N/A&#10;&#10;status: Very Stable" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="528" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575225492403">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="528" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1575225492403" />
+    <state x="464" y="55" key="CommitChangelistDialog2" timestamp="1575290455881">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="464" y="55" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1575290455881" />
+    <state width="819" height="355" key="GridCell.Tab.0.bottom" timestamp="1575290426421">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="819" height="355" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1575290426421" />
+    <state width="819" height="355" key="GridCell.Tab.0.center" timestamp="1575290426420">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="819" height="355" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1575290426420" />
+    <state width="819" height="355" key="GridCell.Tab.0.left" timestamp="1575290426419">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="819" height="355" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1575290426419" />
+    <state width="819" height="355" key="GridCell.Tab.0.right" timestamp="1575290426421">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="819" height="355" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1575290426421" />
+    <state width="1638" height="363" key="GridCell.Tab.1.bottom" timestamp="1575283970585">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="363" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1575283970584" />
+    <state width="1638" height="363" key="GridCell.Tab.1.center" timestamp="1575283970583">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="363" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1575283970583" />
+    <state width="1638" height="363" key="GridCell.Tab.1.left" timestamp="1575283970582">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="363" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1575283970582" />
+    <state width="1638" height="363" key="GridCell.Tab.1.right" timestamp="1575283970584">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="363" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1575283970584" />
+    <state x="517" y="354" key="com.intellij.ide.util.TipDialog" timestamp="1575277922114">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="517" y="354" key="com.intellij.ide.util.TipDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1575277922114" />
+    <state x="517" y="369" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1575214503886" />
+  </component>
+</project>
