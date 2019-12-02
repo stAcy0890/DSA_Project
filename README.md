@@ -10,6 +10,7 @@ SDL focuses on modelling networking in terms of the internet. The __aim__ of thi
 * Latency (defined by the weight on edges)
 * Sender and recipient users
 * Efficiency (which defines the data structures chosen)
+The intended __application__ of this project is in teaching networking at a secondary school level. With the development of an appropriate Graphical User Interface (GUI), the authors of this project hope to aid the complete understanding of key, basic networking terminology and processes. 
 
 ### Components
 * Network: The network will be represented using the graph data structure with servers acting as internal nodes and users as external nodes/leaves. 
@@ -30,8 +31,14 @@ __Phase 2__
 - [x] Create four (4) more servers and connect to more than one (1) server each
 - [x] Initiate a “conversation” between two users by sending packets to and fro
 - [x] Create a “Unread” and “Read” stack for the user inbox
-- [ ] Implement Dijkstra's algorithm
+- [x] Implement Dijkstra's algorithm
 
 __Phase 3__
-- [ ] Randomize latency time
+- [ ] Allow end user choose action 
+- [ ] Randomize latency time 
 - [ ] Create a user interface
+
+### Acknowledgements 
+* 
+* 
+* 
