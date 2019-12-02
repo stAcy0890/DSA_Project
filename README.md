@@ -39,6 +39,4 @@ __Phase 3__
 - [ ] Create a user interface
 
 ### Acknowledgements 
-* 
-* 
-* 
+* Dijkstra's algorithm: "Graph Data Structure 4. Dijkstra's Shortest Path Algorithm" by Computer Science (https://youtu.be/pVfj6mxhdMw)
