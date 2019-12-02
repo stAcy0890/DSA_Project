@@ -29,7 +29,7 @@ __Phase 1__
 
 __Phase 2__
 - [x] Create four (4) more servers and connect to more than one (1) server each
-- [x] Initiate a “conversation” between two users by sending packets to and fro
+- [ ] Initiate a “conversation” between two users by sending packets to and fro
 - [x] Create a “Unread” and “Read” stack for the user inbox
 - [x] Implement Dijkstra's algorithm
 
