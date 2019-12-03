@@ -34,7 +34,7 @@ public class Model {
         network.addHost(user4);
         network.addHost(user5);
 
-        System.out.println(network);
+        //System.out.println(network);
 
         network.addConnection(server1, user1, 1);          // server to user connection is valid
         network.addConnection(server1, server2, 6);        // server to server connection is valid
@@ -53,10 +53,11 @@ public class Model {
         network.addConnection(server3, user3, 1);
 
 
-        System.out.println();
-        System.out.println(network);
+        //System.out.println();
+        //System.out.println(network);
         //network.removeHost(server2);
 
+        System.out.println();
         System.out.println("Number of connected hosts: " + network.getNumHosts());
         System.out.println("Number of connected servers: " + network.getNumServers());
         System.out.println("Number of connected users: " + network.getNumUsers());
@@ -79,12 +80,6 @@ public class Model {
                     switch (ans) {
                         case "Y":
                         case "y":
-                            for (String name : network.members.keySet()) {
-                                if (network.members.get(name).getType() == Host.Type.USER)
-                                    System.out.println("\t" + name);
-                            }
-                            String name = opt.nextLine();
-                            Host user = network.members.get(name);
                             network.sendPacket();
                             break;
                         case "N":
@@ -167,11 +162,18 @@ public class Model {
         }
     }
 
+    public void printUsers() {
+        for (String name : this.members.keySet()) {
+            if (this.members.get(name).getType() == Host.Type.USER)
+                System.out.println("\t" + name);
+        }
+    }
+
     public void sendPacket() {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Choose a user (source): ");
-        //System.out.println(network.getUsers);
+        this.printUsers();
         String sourceName = input.nextLine();
         Host source = members.get(sourceName);
 
@@ -179,22 +181,13 @@ public class Model {
         String message = input.nextLine();
 
         System.out.println("Choose a user (destination): ");
-        //System.out.println(network.getUsers);
+        this.printUsers();
         String destName = input.nextLine();
         Host destination = members.get(destName);
 
-//        LinkedList<Host> path = new LinkedList<>();
-//        path.add(source);
-//        path.add(network.get(source).get(0).getHost());
-//        // .get(source): returns linked list for source host
-//        // .get(1): returns the only node (i.e. the node containing the server)
-//        // .getHost(): returns the host at the node (i.e. the server)
-//        path.add(destination);
-
-        //TODO: implement real pathfinder in phase 4
         LinkedList<Host> path = fastestPath(source, destination);
 
-        Packet packet = new Packet(message);
+        Packet packet = new Packet("FROM " + sourceName + ": " + message);
         move(packet, path);
     }
 
@@ -215,9 +208,9 @@ public class Model {
         LinkedList<Host> path = new LinkedList<>();                // create path
 
         // check if source and destination is in the network
-        if (members.containsValue(source) == false || members.containsValue(destination) == false)
+        if (members.containsValue(source) == false || members.containsValue(destination) == false) {
             System.out.println("Destination not found.");
-        else {
+        } else {
             ArrayList<Host> visited = new ArrayList<Host>();           // create visited list
             ArrayList<Host> unvisited = new ArrayList<Host>();         // create unvisited list
             Host current = network.get(source).get(0).getHost();       // set start of path finder to the source's server
@@ -226,6 +219,13 @@ public class Model {
             Host parentSource = network.get(source).get(0).getHost();
             Host parentDestination = network.get(destination).get(0).getHost();
 
+            if (source == destination) {
+                path.add(source);
+                path.add(parentSource);
+                path.add(destination);
+                return path;
+            }
+
             // add all servers to the unvisited stack
             for (Map.Entry<String, Host> member : members.entrySet()) {
                 if (member.getValue().getType() == Host.Type.SERVER) {
@@ -233,15 +233,11 @@ public class Model {
                 }
             }
 
-            System.out.println("Initial Unvisited: " + unvisited);
-            System.out.println("Initial Visited: " + visited);
-
             while (unvisited.size() != 0) {
                 ArrayList<Node> neighbours = new ArrayList<>();
 
                 // find index of the current node
                 int index = unvisited.indexOf(current);
-                System.out.println(index);
 
                 // examine the unvisited neighbours of current node
                 LinkedList<Node> n = network.get(current);
@@ -251,13 +247,6 @@ public class Model {
                         neighbours.add(n.get(j));
                     }
                 }
-
-                System.out.print("Neighbours: ");
-                for (int y = 0; y < neighbours.size(); y++) {
-                    System.out.print(neighbours.get(y).host.getName());
-                    System.out.print(" ");
-                }
-                System.out.println();
 
                 // for each unvisited neighbour {1. check dist = current.d + weight, 2. if dist < d, update d and make parent = current}
                 int dist = 0;
@@ -269,17 +258,10 @@ public class Model {
                     }
                 }
 
-                for (int ss = 0; ss < unvisited.size(); ss++) {
-                    System.out.println(unvisited.get(ss).getName() + ": " + unvisited.get(ss).getD());
-                }
-                System.out.println();
-
                 // add current to visited and remove from unvisited
                 Host temporary = unvisited.get(index);
                 unvisited.remove(index);
                 visited.add(temporary);
-                System.out.println("Unvisited: " + unvisited);
-                System.out.println("Visited: " + visited);
 
                 // check unvisited hosts for least distance and make current node
                 int tempMin = 100;
@@ -291,8 +273,6 @@ public class Model {
                         current = unvisited.get(k);
                     }
                 }
-                System.out.println(current.getName());
-                System.out.println("----------------");
             }
 
             path.add(source);                                       // add source
@@ -303,8 +283,10 @@ public class Model {
                 tempPath.add(c.getParent());
                 c = c.getParent();
             }
-            for (int x = tempPath.size() - 1; x < 0; x--) {
-                path.add(tempPath.get(x));
+            if (tempPath.size() > 0) {
+                for (int x = tempPath.size() - 1; x < 0; x--) {
+                    path.add(tempPath.get(x));
+                }
             }
             path.add(parentDestination);                             // add destination's server
             path.add(destination);                                   // add destination
@@ -363,12 +345,4 @@ public class Model {
     }
 }
 
-/*
-                // find the unvisited host with the lowest distance from the start
-                for (int i = 0; i < unvisited.size(); i++) {
-                    if (min > unvisited.get(i).getD()) {
-                        min = unvisited.get(i).getD();
-                        index = i;
-                    }
-                }
-                */
+

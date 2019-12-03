@@ -3,10 +3,6 @@ package com.dsa.Internet;
 import java.util.Stack;
 
 public class Host {
-    public void updateInbox(Packet p) {
-        unreadInbox.push(p);
-    }
-
     private String name;
     private Type type;
     private Packet receiver;
@@ -62,6 +58,10 @@ public class Host {
 
     public void setReceiver(Packet receiver) {
         this.receiver = receiver;
+    }
+
+    public void updateInbox(Packet p) {
+        unreadInbox.push(p);
     }
 
     public boolean isActive() {
