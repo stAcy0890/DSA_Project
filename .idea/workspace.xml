@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="8baa41dd-249e-43d1-bf3c-be8e773479b3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Host$Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Host$Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Host.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Host.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Model$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Model$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Model.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Packet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Packet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dsa/Internet/Host.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dsa/Internet/Host.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dsa/Internet/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dsa/Internet/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dsa/Internet/Packet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dsa/Internet/Packet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +26,7 @@
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JavaFXApplication" />
       </list>
     </option>
   </component>
@@ -63,10 +70,14 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.dsa.network" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dsa.Internet" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -221,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575290597782</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Sixth commit&#10;!!Chinwe Ibegbu was a major contributor!!&#10;&#10;Update: Slight changes made.&#10;&#10;ToDo: Error Handling &#10;&#10;Issues: N/A&#10;&#10;Status: Stable">
+      <created>1575379825003</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1575379825003</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -256,7 +274,8 @@
     <MESSAGE value="Fourth commit&#10;&#10;Update: Phase 1 Completed!.&#10;&#10;ToDo: implementing A* Pathfinder Algorithm. &#10;&#10;Issues: N/A&#10;&#10;status: stable" />
     <MESSAGE value="Fifth commit&#10;&#10;Update: Dijkstra's Algorithm implemented.&#10;        Completed!&#10;&#10;ToDo: Error Handling &#10;&#10;Issues: N/A&#10;&#10;status: Very Stable" />
     <MESSAGE value="Fifth commit&#10;!!Chinwe Ibegbu was a major contributor!!&#10;&#10;Update: Dijkstra's Algorithm implemented.&#10;        Completed!&#10;&#10;ToDo: Error Handling &#10;&#10;Issues: N/A&#10;&#10;status: Very Stable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fifth commit&#10;!!Chinwe Ibegbu was a major contributor!!&#10;&#10;Update: Dijkstra's Algorithm implemented.&#10;        Completed!&#10;&#10;ToDo: Error Handling &#10;&#10;Issues: N/A&#10;&#10;status: Very Stable" />
+    <MESSAGE value="Sixth commit&#10;!!Chinwe Ibegbu was a major contributor!!&#10;&#10;Update: Slight changes made.&#10;&#10;ToDo: Error Handling &#10;&#10;Issues: N/A&#10;&#10;Status: Stable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sixth commit&#10;!!Chinwe Ibegbu was a major contributor!!&#10;&#10;Update: Slight changes made.&#10;&#10;ToDo: Error Handling &#10;&#10;Issues: N/A&#10;&#10;Status: Stable" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -266,26 +285,30 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="528" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1575225492403" />
-    <state x="464" y="55" key="CommitChangelistDialog2" timestamp="1575290597697">
+    <state x="464" y="55" key="CommitChangelistDialog2" timestamp="1575379824800">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="464" y="55" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1575290597697" />
-    <state width="1638" height="249" key="GridCell.Tab.0.bottom" timestamp="1575379549063">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="464" y="55" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1575379824800" />
+    <state width="1638" height="255" key="GridCell.Tab.0.bottom" timestamp="1575647016345">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="249" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1575379549063" />
-    <state width="1638" height="249" key="GridCell.Tab.0.center" timestamp="1575379549062">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="876" height="365" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1575636944734" />
+    <state width="1638" height="255" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1575647016345" />
+    <state width="1638" height="255" key="GridCell.Tab.0.center" timestamp="1575647016344">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="249" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1575379549062" />
-    <state width="1638" height="249" key="GridCell.Tab.0.left" timestamp="1575379549061">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="876" height="365" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1575636944731" />
+    <state width="1638" height="255" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1575647016344" />
+    <state width="1638" height="255" key="GridCell.Tab.0.left" timestamp="1575647016343">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="249" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1575379549061" />
-    <state width="1638" height="249" key="GridCell.Tab.0.right" timestamp="1575379549062">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="876" height="365" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1575636944730" />
+    <state width="1638" height="255" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1575647016343" />
+    <state width="1638" height="255" key="GridCell.Tab.0.right" timestamp="1575647016344">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="249" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1575379549062" />
+    <state width="876" height="365" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1575636944732" />
+    <state width="1638" height="255" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1575647016344" />
     <state width="1638" height="363" key="GridCell.Tab.1.bottom" timestamp="1575303602044">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -302,15 +325,23 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1638" height="363" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1575303602043" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1575290601520">
+    <state x="0" y="164" key="SettingsEditor" timestamp="1575634573671">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1575290601520" />
-    <state x="517" y="354" key="com.intellij.ide.util.TipDialog" timestamp="1575376947837">
+    <state x="0" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1575634573671" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1575379829067">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="517" y="354" key="com.intellij.ide.util.TipDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1575376947837" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1575379829067" />
+    <state x="517" y="354" key="com.intellij.ide.util.TipDialog" timestamp="1575603592611">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="517" y="354" key="com.intellij.ide.util.TipDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1575603592611" />
     <state x="517" y="369" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1575214503886" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1575586518008">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1575586518008" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1575378853771">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

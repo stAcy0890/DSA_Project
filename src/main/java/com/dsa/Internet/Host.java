@@ -3,29 +3,32 @@ package com.dsa.Internet;
 import java.util.Stack;
 
 public class Host {
+    private Packet receiver;                // used by the move(...) method of the Model class
+
     private String name;
     private Type type;
-    private Packet receiver;
-    private Stack<Packet> unreadInbox;
-    private Stack<Packet> readInbox;
-    private boolean isActive;
-    private int d;
-    private Host parent;
+    private Stack<Packet> unreadInbox;      // holds all unread "emails"
+    private Stack<Packet> readInbox;        // holds all read "emails"
+    private int d;                          // represents the distance from the start vertex for Dijktra's algorithm
+    private Host parent;                    // represents the previous vertex of a vertex for Dijktra's algorithm
 
     public Host(String n, Type t) {
         name = n;
         type = t;
-        isActive = true;
-        d = 10000; // infinity;
+        d = 10000;
         parent = null;
         unreadInbox = new Stack<Packet>();
         readInbox = new Stack<Packet>();
     }
 
-    public int numOfConnectedUsers() {  //TODO: Haven't done this yet
-        return 0;
-    }
-
+    /*
+     * This method reads the last message received by the user
+     * stored in the unreadInbox of the host.
+     * Once an "email" is read, it is popped to the unread stack.
+     *
+     * Paramter(s): None
+     * Return value: None
+     */
     public void openInbox() {
         if (!(unreadInbox.isEmpty())) {
             Packet p = unreadInbox.pop();
@@ -36,9 +39,18 @@ public class Host {
         }
     }
 
-    public void setActivate(boolean b) {
-        isActive = b;
+    /*
+     * The updateInbox(...) method adds a packet to the unreadInbox
+     * of the host it is called on.
+     *
+     * Paramter(s): The packet to be added
+     * Return value: None
+     */
+    public void updateInbox(Packet p) {
+        unreadInbox.push(p);
     }
+
+    enum Type {SERVER, USER}
 
     public String getName() {
         return name;
@@ -60,14 +72,6 @@ public class Host {
         this.receiver = receiver;
     }
 
-    public void updateInbox(Packet p) {
-        unreadInbox.push(p);
-    }
-
-    public boolean isActive() {
-        return isActive;
-    }
-
     public Host getParent() {
         return parent;
     }
@@ -84,12 +88,9 @@ public class Host {
         return d = distance;
     }
 
-    enum Type {SERVER, USER}
-
     @Override
     public String toString() {
         return getName();
     }
-
 
 }

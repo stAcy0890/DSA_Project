@@ -16,7 +16,6 @@ public class Packet {
         return message;
     }
 
-    //TODO: Yet to be implemented.
     public void setMessage(String message) {
         this.message = message;
     }
