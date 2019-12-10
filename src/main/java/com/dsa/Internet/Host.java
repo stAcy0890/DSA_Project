@@ -26,7 +26,7 @@ public class Host {
      * stored in the unreadInbox of the host.
      * Once an "email" is read, it is popped to the unread stack.
      *
-     * Paramter(s): None
+     * Parameter(s): None
      * Return value: None
      */
     public void openInbox() {
@@ -43,7 +43,7 @@ public class Host {
      * The updateInbox(...) method adds a packet to the unreadInbox
      * of the host it is called on.
      *
-     * Paramter(s): The packet to be added
+     * Parameter(s): The packet to be added
      * Return value: None
      */
     public void updateInbox(Packet p) {

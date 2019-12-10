@@ -23,12 +23,14 @@ public class Model {
         Host server3 = new Host("C", Host.Type.SERVER);
         Host server4 = new Host("D", Host.Type.SERVER);
         Host server5 = new Host("E", Host.Type.SERVER);
+        Host server6 = new Host("F", Host.Type.SERVER);
         System.out.println("Creating users...");
         Host user1 = new Host("Bob", Host.Type.USER);
         Host user2 = new Host("Dan", Host.Type.USER);
         Host user3 = new Host("Sue", Host.Type.USER);
         Host user4 = new Host("Robert", Host.Type.USER);
         Host user5 = new Host("Hans", Host.Type.USER);
+        Host user6 = new Host("Bill", Host.Type.USER);
         // This server will not be added to the network
         Host server7 = new Host("Redundant", Host.Type.SERVER);
 
@@ -39,11 +41,13 @@ public class Model {
         network.addHost(server3);
         network.addHost(server4);
         network.addHost(server5);
+        network.addHost(server6);
         network.addHost(user1);
         network.addHost(user2);
         network.addHost(user3);
         network.addHost(user4);
         network.addHost(user5);
+        network.addHost(user6);
 
         // Adding connections between users and servers
         // while testing the validity of requested connections
@@ -63,6 +67,8 @@ public class Model {
         network.addConnection(server4, user4, 1);
         network.addConnection(server2, user5, 1);
         network.addConnection(server3, user3, 1);
+        network.addConnection(server5, server6, 3);
+        network.addConnection(server6, user6, 1);
 
         System.out.println();
         System.out.println("Number of connected hosts: " + network.getNumHosts());
@@ -73,7 +79,7 @@ public class Model {
         System.out.println(network);
         System.out.println("Removing servers...");
         network.removeHost(server7);                        // testing removal of a server not within the network
-        network.removeHost(server2);                        // testing removal of a server within the network
+        network.removeHost(server6);                        // testing removal of a server within the network
 
         System.out.println();
         System.out.println(network);
@@ -143,7 +149,7 @@ public class Model {
      * The number of Hosts as well as the number of Hosts by type
      * are incremented accordingly.
      *
-     * Paramter(s): The host to be added
+     * Parameter(s): The host to be added
      * Return value: None
      */
     public void addHost(Host h) {
@@ -164,10 +170,9 @@ public class Model {
      * The number of Hosts as well as the number of Hosts by type
      * are decremented accordingly.
      *
-     * Paramter(s): The host to be removed
+     * Parameter(s): The host to be removed
      * Return value: None
      */
-
     public void removeHost(Host h) {
         LinkedList<Node> tempNodes = new LinkedList<Node>();
         LinkedList<Host> tempHosts = new LinkedList<Host>();
@@ -202,6 +207,7 @@ public class Model {
 
                 if (tempHosts.get(j).getType() == Host.Type.USER) {
                     network.remove(tempHosts.get(j));
+                    members.remove(tempHosts.get(j).getName());
                 }
             }
             members.remove(h.getName());        // removing Host h from the members HashMap
@@ -222,7 +228,7 @@ public class Model {
      * A connection is made in both directions and certain conditions
      * must be met for a connection to be made
      *
-     * Paramter(s): The hosts to be connected; weight of the connection
+     * Parameter(s): The hosts to be connected; weight of the connection
      * Return value: None
      */
     public void addConnection(Host A, Host B, int weight) {
@@ -257,7 +263,7 @@ public class Model {
      * The printUsers() method prints out all host users by iterating
      * through all keys in the network HashMap
      *
-     * Paramter(s): None
+     * Parameter(s): None
      * Return value: None
      */
     public void printUsers() {
@@ -273,7 +279,7 @@ public class Model {
      * fastestPath() method using the move(). Packets are created
      * within this method as well using the Packet class constructor.
      *
-     * Paramter(s): None
+     * Parameter(s): None
      * Return value: None
      */
     public void sendPacket() {
@@ -303,10 +309,17 @@ public class Model {
      * the LinkedList<Host> path.
      * Packets is temporarily stored in the receiver of each host in the path.
      *
-     * Paramter(s): The packet to be sent; the shortest path for travel
+     * Parameter(s): The packet to be sent; the shortest path for travel
      * Return value: None
      */
     public void move(Packet packet, LinkedList<Host> path) {
+
+        // Displaying the path to be traversed
+        System.out.print(">>> PATH: ");
+        for (int i = 0; i < path.size(); i++) {
+            System.out.print(path.get(i).getName() + " --> ");
+        }
+        System.out.println("END");
 
         path.getFirst().setReceiver(packet);
         Iterator<Host> iter = path.iterator();
@@ -326,16 +339,16 @@ public class Model {
      * to the destination using Dijkstra's Algorithm.
      * See in-line comments to follow the algorithm's steps.
      *
-     * Paramter(s): The source and destination hosts
+     * Parameter(s): The source and destination hosts
      * Return value: LinkedList<Host> path
      */
     public LinkedList<Host> fastestPath(Host source, Host destination) {
         LinkedList<Host> path = new LinkedList<>();                    // create path
 
         // check if source and destination is in the network
-        if (members.containsValue(source) == false || members.containsValue(destination) == false)
+        if (members.containsValue(source) == false || members.containsValue(destination) == false) {
             System.out.println("Destination not found.");
-        else {
+        } else {
             ArrayList<Host> visited = new ArrayList<Host>();           // create visited list
             ArrayList<Host> unvisited = new ArrayList<Host>();         // create unvisited list
             Host current = network.get(source).get(0).getHost();       // set start of path finder to the source's server
@@ -408,18 +421,17 @@ public class Model {
 
             // STEP 4: Create the path
             path.add(source);                                       // add source to the path
-            path.add(parentSource);                                 // add source's server to the path
             Host c = parentDestination;
 
             // Trace the path from the destination's server to the source's server
             LinkedList<Host> tempPath = new LinkedList<>();
-            while (c.getParent() != parentSource) {
+            while (c != parentSource) {
                 tempPath.add(c.getParent());
                 c = c.getParent();
             }
             // Reverse the order and insert into the real path
             if (tempPath.size() > 0) {
-                for (int x = tempPath.size() - 1; x < 0; x--) {
+                for (int x = tempPath.size() - 1; x >= 0; x--) {
                     path.add(tempPath.get(x));
                 }
             }

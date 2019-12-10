@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8baa41dd-249e-43d1-bf3c-be8e773479b3" name="Default Changelist" comment="">
+    <list default="true" id="8baa41dd-249e-43d1-bf3c-be8e773479b3" name="Default Changelist" comment="Seventh commit&#10;!!Chinwe Ibegbu was a major contributor!!&#10;&#10;Update: HUGE changes made. removeHost(...) method implemented&#10;&#10;ToDo: Error Handling &#10;&#10;Issues: N/A&#10;&#10;Status: Stable">
+      <change afterPath="$PROJECT_DIR$/out/test/DSA_Project/META-INF/DSA_Project.kotlin_module" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Host$Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Host$Type.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Host.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Host.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Model$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Model$Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Model.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Packet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/Internet/Packet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/interfaces/GraphMethods.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/interfaces/PacketMethods.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/interfaces/ServerMethods.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/interfaces/UserMethods.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSA_Project/com/dsa/network/TestJunit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DSA_Project/com/dsa/network/TestJunitTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dsa/Internet/Host.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dsa/Internet/Host.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dsa/Internet/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dsa/Internet/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dsa/Internet/Packet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dsa/Internet/Packet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dsa/interfaces/GraphMethods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dsa/interfaces/PacketMethods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dsa/interfaces/ServerMethods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dsa/interfaces/UserMethods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dsa/network/TestJunit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dsa/network/TestJunitTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +79,7 @@
     <property name="Repository.Attach.Annotations" value="true" />
     <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="Repository.Attach.Sources" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -239,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575379825003</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Seventh commit&#10;!!Chinwe Ibegbu was a major contributor!!&#10;&#10;Update: HUGE changes made. removeHost(...) method implemented&#10;&#10;ToDo: Error Handling &#10;&#10;Issues: N/A&#10;&#10;Status: Stable">
+      <created>1575647419118</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1575647419118</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -275,39 +295,41 @@
     <MESSAGE value="Fifth commit&#10;&#10;Update: Dijkstra's Algorithm implemented.&#10;        Completed!&#10;&#10;ToDo: Error Handling &#10;&#10;Issues: N/A&#10;&#10;status: Very Stable" />
     <MESSAGE value="Fifth commit&#10;!!Chinwe Ibegbu was a major contributor!!&#10;&#10;Update: Dijkstra's Algorithm implemented.&#10;        Completed!&#10;&#10;ToDo: Error Handling &#10;&#10;Issues: N/A&#10;&#10;status: Very Stable" />
     <MESSAGE value="Sixth commit&#10;!!Chinwe Ibegbu was a major contributor!!&#10;&#10;Update: Slight changes made.&#10;&#10;ToDo: Error Handling &#10;&#10;Issues: N/A&#10;&#10;Status: Stable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sixth commit&#10;!!Chinwe Ibegbu was a major contributor!!&#10;&#10;Update: Slight changes made.&#10;&#10;ToDo: Error Handling &#10;&#10;Issues: N/A&#10;&#10;Status: Stable" />
+    <MESSAGE value="Seventh commit&#10;!!Chinwe Ibegbu was a major contributor!!&#10;&#10;Update: HUGE changes made. removeHost(...) method implemented&#10;&#10;ToDo: Error Handling &#10;&#10;Issues: N/A&#10;&#10;Status: Stable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Seventh commit&#10;!!Chinwe Ibegbu was a major contributor!!&#10;&#10;Update: HUGE changes made. removeHost(...) method implemented&#10;&#10;ToDo: Error Handling &#10;&#10;Issues: N/A&#10;&#10;Status: Stable" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="528" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575225492403">
+    <state x="528" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575997577306">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="528" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1575225492403" />
-    <state x="464" y="55" key="CommitChangelistDialog2" timestamp="1575379824800">
+    <state x="528" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1575997577306" />
+    <state x="464" y="55" key="CommitChangelistDialog2" timestamp="1575997716266">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="464" y="55" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1575379824800" />
-    <state width="1638" height="255" key="GridCell.Tab.0.bottom" timestamp="1575647016345">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state x="464" y="55" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1575997716266" />
+    <state x="464" y="77" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1575647418888" />
+    <state width="1638" height="276" key="GridCell.Tab.0.bottom" timestamp="1575690231480">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="876" height="365" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1575636944734" />
+    <state width="1638" height="276" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1575690231480" />
     <state width="1638" height="255" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1575647016345" />
-    <state width="1638" height="255" key="GridCell.Tab.0.center" timestamp="1575647016344">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1638" height="276" key="GridCell.Tab.0.center" timestamp="1575690231479">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="876" height="365" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1575636944731" />
+    <state width="1638" height="276" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1575690231479" />
     <state width="1638" height="255" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1575647016344" />
-    <state width="1638" height="255" key="GridCell.Tab.0.left" timestamp="1575647016343">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1638" height="276" key="GridCell.Tab.0.left" timestamp="1575690231479">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="876" height="365" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1575636944730" />
+    <state width="1638" height="276" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1575690231479" />
     <state width="1638" height="255" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1575647016343" />
-    <state width="1638" height="255" key="GridCell.Tab.0.right" timestamp="1575647016344">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1638" height="276" key="GridCell.Tab.0.right" timestamp="1575690231479">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="876" height="365" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1575636944732" />
+    <state width="1638" height="276" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1575690231479" />
     <state width="1638" height="255" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1575647016344" />
     <state width="1638" height="363" key="GridCell.Tab.1.bottom" timestamp="1575303602044">
       <screen x="0" y="0" width="1680" height="1050" />
@@ -329,22 +351,27 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="0" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1575634573671" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1575379829067">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="440" y="282" key="Vcs.Push.Dialog.v2" timestamp="1575647441600">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1575379829067" />
-    <state x="517" y="354" key="com.intellij.ide.util.TipDialog" timestamp="1575603592611">
+    <state x="440" y="282" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1575647441600" />
+    <state x="517" y="354" key="com.intellij.ide.util.TipDialog" timestamp="1575997673111">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="517" y="354" key="com.intellij.ide.util.TipDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1575603592611" />
+    <state x="517" y="354" key="com.intellij.ide.util.TipDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1575997673111" />
     <state x="517" y="369" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1575214503886" />
+    <state x="498" y="168" width="683" height="714" key="find.popup" timestamp="1575662750822">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="498" y="168" width="683" height="714" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1575662750822" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1575586518008">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="600" height="424" key="javadoc.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1575586518008" />
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1575378853771">
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1575662904982">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1575378853771" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1575662904982" />
   </component>
 </project>
